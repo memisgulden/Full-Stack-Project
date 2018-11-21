@@ -1,435 +1,397 @@
 body {
-    background-image: url("images/1.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    height: 100%;
-    font-family: 'Montserrat', sans-serif;
-  }  
+  background-image: url("images/1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}  
+.pg-title {
+  background-color: #e6d5d5;
+  color: #5967b4;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 14px;
+  padding: 5%;
+  border-radius: 25px;
+  border: 0px solid; 
+  width: 220px;
+  height: 200px; 
+  margin-bottom: 5%;
+}
+.quotes {
+  background-color: #e6d5d5;
+  color:  #a5a9d9;
+  height: 138px;
+  width: 138px;
+  border-radius: 60%;
+  font-size: 14px;
+  font-family: 'Montserrat-bold', sans-serif;
+}
+#sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #a5a9d9;
+}
+#first{
+  margin-top: -10%;
+}
+#rroulette {
+  color:  #a5a9d9;
+}
 
-  .pg-title {
-    background-color: #e6d5d5;
-    color: #5967b4;
-    font-family: 'Montserrat-bold', sans-serif;
-    font-size: 14px;
-    padding: 5%;
-    border-radius: 25px;
-    border: 0px solid; 
-    width: 220px;
-    height: 200px; 
-    margin-bottom: 5%;
+ #groupP, #rest-form-heading {
+  background-color: #e6d5d5;
+  color: #8e97cc;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 2rem;
+  padding: 5%;
+  border-radius: 25px;
+  border: 0px solid; 
+  margin-bottom: 5%;
+}
 
-  }
+h2 {
+  font-size: 2rem;
+  text-align: center;
 
-  .quotes {
-    background-color: #e6d5d5;
-    color:  #a5a9d9;
-    height: 138px;
-    width: 138px;
-    border-radius: 60%;
-    font-size: 14px;
-    font-family: 'Montserrat-bold', sans-serif;
-  }
+}
+h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 2rem;
+  word-spacing: .2rem;  
+}
 
-  #sub {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
-    color: #a5a9d9;
-  }
+input {
+  display: block;
+  margin: 0 auto;
+}
+#all-groups{
+background-color: #e6d5d5;
+color: #8e97cc;
+font-family: 'Montserrat-bold', sans-serif;
+font-size: 2rem;
+padding: 5%;
+border-radius: 25px;
+border: 0px solid; 
+margin-bottom: 5%;
+}
 
-  #first{
-    margin-top: -10%;
-  }
+#new-group-form,
+#existing-group-form,
+#all-groups{
+  display: none;
+  background-color: white;
+  margin-top: 10rem;
+  padding: 5rem;
+  line-height: 1;
+}
 
-  #rroulette {
-    color:  #a5a9d9;
-  }
-  
-   #groupP, #rest-form-heading {
-    background-color: #e6d5d5;
-    color: #8e97cc;
-    font-family: 'Montserrat-bold', sans-serif;
-    font-size: 2rem;
-    padding: 5%;
-    border-radius: 25px;
-    border: 0px solid; 
-    margin-bottom: 5%;
-  }
-  
-  h2 {
-    font-size: 2rem;
+.introduction {
+  /* background-color: rgba(19, 18, 18, 0.537); */
+  color: #e0d8cb;
+  padding: 5rem;  
+}
+.jumbtron {
+  height: 100%;
+  top: 100%;
+}
+.jumbotron {
+  background-color: rgba(255, 255, 255, 0.0) !important;
+}
+.one {
+  margin: 0 !important;
+}
+#intro {
+  color: #bb7b43;
+  line-height: .5;
+  font-size: 3rem;
+  text-align: center;
+
+}
+.form-control {
+  width: 50%;
+}
+.form-heading {
+  background-color: #e6d5d5;
+  color: #5967b4; 
+  font-family: 'Montserrat-bold', sans-serif;
+  border-radius: 60px;
+  width: 30%;
+  border: 0px solid;
+  padding: 24px; 
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 2rem;
+}   
+
+.rest-heading {
+    color:  #5967b4;
+    font-size: 14px;  
     text-align: center;
-  
+}
+
+#user-list, #new-restaurant{
+  background-color: #e6d5d5;
+  color: #5967b4; 
+  font-family: 'Montserrat-bold', sans-serif;
+  border-radius: 60px;
+  border: 0px solid;
+  padding: 20px; 
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 2rem;
   }
-  h3 {
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 2rem;
-    word-spacing: .2rem;  
+  #pick-restaurant {
+  background-color: #5967b4; 
+  color:#e6d5d5; 
+  font-family: 'Montserrat-bold', sans-serif;
+  border-radius: 60px; 
+  border: 0px solid;
+  padding: 20px; 
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 16px; 
   }
-  
-  input {
-    display: block;
-    margin: 0 auto;
+
+#wrap {
+  background-color: #5967b4; 
+  color:#e6d5d5; 
+  font-family: 'Montserrat-bold', sans-serif;
+  border-radius: 60px;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px; 
   }
-  
-  #new-group-form,
-  #existing-group-form,
-  #all-groups{
-    display: none;
-    background-color: white;
-    margin-top: 10rem;
-    padding: 5rem;
-    line-height: 1;
-  }
-  
-  .introduction {
-    /* background-color: rgba(19, 18, 18, 0.537); */
+
+   */
+  #userNames {
     color: #e0d8cb;
-    padding: 5rem;  
-  }
-  .jumbtron {
-    height: 100%;
-    top: 100%;
-  }
-  .jumbotron {
-    background-color: rgba(255, 255, 255, 0.0) !important;
+    font-size: 2rem;
+
   }
 
-  .one {
-    margin: 0 !important;
+  #groupName {
+    color: #e0d8cb;
+    font-size: 10rem;
+      
   }
-  #intro {
-    color: #bb7b43;
-    line-height: .5;
-    font-size: 3rem;
-    text-align: center;
-  
-  }
-  .form-control {
+  #submit-new-grp, #find-group
+  {
+  text-decoration: none;
+  outline: none;
+  font-size: 1rem;
+  background-color:#5967b4; 
+  color: #e6d5d5;
+  font-family: 'Montserrat-bold', sans-serif;
+  width: 15%;
+  height: 30%;
+  border-radius: 60%;
+  border: 0px solid;
+  padding: 20px; 
+  margin: 5%;
+}
+#submit-pick {
+  position: relative;
+  /* margin-right: 50%; */
+  background-color: #5967b4; 
+  color:#e6d5d5; 
+  font-family: 'Montserrat-bold', sans-serif;
+  border-radius: 60px;
+  border: 0px solid;
+  padding: 20px; 
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 16px;
+}
+
+#group-form {
+  display: none;
+  padding: 20px;
+  line-height: 2;
+  color: white;
+}
+
+::placeholder {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+#make-group-btn {
+  margin-top: 2rem;
+  background-color: #e6d5d5;
+  color: #8e97cc;
+  text-decoration: none;
+  outline: none;
+  font-size: 2rem;
+  font-variant: small-caps;
+  border-radius: 25px;
+}
+
+#existing-group-btn {
+  margin-top: 2rem;
+  background-color: #e6d5d5;
+  color: #8e97cc;
+  text-decoration: none;
+  outline: none;
+  font-size: 2rem;
+  font-variant: small-caps;
+  border-radius: 25px;
+}
+
+#all-groups {
+    background-color: #5967b4;
+    color: #8e97cc;
     width: 50%;
+    border-radius: 25px;
+  }
+  
+  
+  .allGroupsItemBtn {
+    color: #8e97cc;
+    background-color:  #e6d5d5;
+    font-size: 2rem;
+    border-radius: 25px;
+  }
+  
+  .restaurant-photo {
+    height: 200px;
+    width: auto;
+    border: 1px solid black;
+  }
+
+.footer {
+  letter-spacing: 0.1em;
+  height: 5vh;
+  text-align: center;
+  font-family: 'Montserrat-bold', sans-serif;
+  background-color:  #e6d5d5;
+  color: #8e97cc;
+}
+
+.footer p {
+  color:  #8e97cc;
+  font-size: 12px;
+  vertical-align: 0.5;
+  line-height: 4vh;
+  text-align: center;
+}
+
+.copyright {
+  position: absolute;
+  right: 20px;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+#fa-utensils {
+  color: #e6d5d5;
+  background-color:#5967b4;
+  margin-top: -84px; 
+  margin-left: -115px;
+  font-size: 1.7rem;
+  width: 2rem;
+  border-radius: 60%;
+  position: absolute; 
+}
+
+#logo {
+  font-family:'Montserrat-bold', sans-serif;
+  font-weight: bold;
+  background-color:  #e6d5d5;
+  color:#5967b4;
+  border-radius: 25px;
+  border: 0px solid;
+  padding: 20px; 
+}
+
+#wrap {
+  min-width: 100px;
+  max-width: 600px;
+}
+
+button {
+  font-family: 'Montserrat-bold', sans-serif;   
+}
+@media screen and (max-width: 967px) {
+  #submit-new-grp {
+    width: 20%
   }
   .form-heading {
-    background-color: #e6d5d5;
-    color: #5967b4; 
-    font-family: 'Montserrat-bold', sans-serif;
-    border-radius: 60px;
-    width: 30%;
-    border: 0px solid;
-    padding: 24px; 
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 2rem;
-  }   
-  
-  .rest-heading {
-      color:  #5967b4;
-      font-size: 14px;  
-      text-align: center;
+    width: 30%
   }
-  
-  #user-list, #new-restaurant{
-    background-color: #e6d5d5;
-    color: #5967b4; 
-    font-family: 'Montserrat-bold', sans-serif;
-    border-radius: 60px;
-    border: 0px solid;
-    padding: 20px; 
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 2rem;
-    }
-
-    #pick-restaurant {
-    background-color: #5967b4; 
-    color:#e6d5d5; 
-    font-family: 'Montserrat-bold', sans-serif;
-    border-radius: 60px; 
-    border: 0px solid;
-    padding: 20px; 
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 16px; 
-    }
-  
-
-  #wrap {
-    background-color: #5967b4; 
-    color:#e6d5d5; 
-    font-family: 'Montserrat-bold', sans-serif;
-    border-radius: 60px;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 16px; 
-    }
-  
-     */
-    #userNames {
-      color: #e0d8cb;
-      font-size: 2rem;
- 
-    }
-  
-    #groupName {
-      color: #e0d8cb;
-      font-size: 10rem;
-        
-    }
-  
-  #allGroupsHead {
-    color: #e0d8cb;
-    font-size: 3.5rem;
-    line-height: 2rem;
-    font-variant: small-caps;
-  }
-  
-  #submit-new-grp,
-  /* #find-group,
-
-  #allGroupsItemBtn { */
-    #submit-new-grp
-    {
-    text-decoration: none;
-    outline: none;
-    font-size: 1rem;
-    background-color:#5967b4; 
-    color: #e6d5d5;
-    font-family: 'Montserrat-bold', sans-serif;
-    width: 15%;
-    height: 30%;
-    border-radius: 60%;
-    border: 0px solid;
-    padding: 20px; 
-    margin: 5%;
-
-  }
-  #submit-pick {
-    position: relative;
-    /* margin-right: 50%; */
-    background-color: #5967b4; 
-    color:#e6d5d5; 
-    font-family: 'Montserrat-bold', sans-serif;
-    border-radius: 60px;
-    border: 0px solid;
-    padding: 20px; 
-    text-align: center;
-    margin-bottom: 5%;
-    font-size: 16px;
-  }
-  
-  #group-form {
-    display: none;
-    padding: 20px;
-    line-height: 2;
-    color: white;
-  }
-  
-  ::placeholder {
-    font-style: italic;
-    opacity: 0.7;
-  }
-  
-  #make-group-btn {
-    margin-top: 2rem;
-    background-color: #e6d5d5;
-    color: #8e97cc;
-    text-decoration: none;
-    outline: none;
-    font-size: 2rem;
-    font-variant: small-caps;
-    border-radius: 25px;
-  }
-  
-  #existing-group-btn {
-    margin-top: 2rem;
-    background-color: #e6d5d5;
-    color: #8e97cc;
-    text-decoration: none;
-    outline: none;
-    font-size: 2rem;
-    font-variant: small-caps;
-    border-radius: 25px;
-  }
-  
-  #all-groups {
-      color: white;
-    }
-    
-    #allGroupsHead {
-      font-size: 20px;
-    }
-    
-    .allGroupsItemBtn {
-      color: #bb7b43;
-      text-decoration: none;
-      outline: none;
-      font-size: 2.1rem;
-      font-variant: small-caps;
-      margin: 10px;
-      height: 40px;
-      display: inline-block;
-    }
-    
-    .restaurant-photo {
-      height: 200px;
-      width: auto;
-      border: 1px solid black;
-    }
-  
-  .footer {
-    letter-spacing: 0.1em;
-    height: 5vh;
-    text-align: center;
-    font-family: 'Montserrat-bold', sans-serif;
-    background-color:  #e6d5d5;
-    color: #8e97cc;
-  }
-  
-  .footer p {
-    color:  #8e97cc;
-    font-size: 12px;
-    vertical-align: 0.5;
-    line-height: 4vh;
-    /* float: left; */
-    text-align: center;
-  }
-  
-  .copyright {
-    position: absolute;
-    right: 20px;
-  }
-  
-  .bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-  }
-
+@media screen and (max-width: 766px) {
   #fa-utensils {
-    color: #e6d5d5;
-    background-color:#5967b4;
-    margin-top: -83px;
-    font-size: 21px;
-    width: 25px;
-    border-radius: 60%;
-    margin-left: 168px;
-    position: absolute;
+    margin-left: 27%;
+    margin-top: -70px;
   }
-  
-  #logo {
-    font-family:'Montserrat-bold', sans-serif;
-    font-weight: bold;
-    background-color:  #e6d5d5;
-    color:#5967b4;
-    border-radius: 25px;
-    border: 0px solid;
-    padding: 20px; 
+  .form-heading {
+    width: 60%
   }
-  
-  #wrap {
-    min-width: 100px;
-    max-width: 600px;
-  }
-  
-  button {
-    font-family: 'Montserrat-bold', sans-serif;   
-
-  }
-
-  @media screen and (max-width: 967px) {
-    #submit-new-grp {
-      width: 20%
-    }
-
-    .form-heading {
-      width: 30%
-    }
-
-
-  @media screen and (max-width: 766px) {
+  @media screen and (max-width: 726px) {
     #fa-utensils {
       margin-left: 27%;
       margin-top: -70px;
+      
     }
-
+    #submit-new-grp {
+      width: 20%
+    }
     .form-heading {
-      width: 60%
+      width: 70%
     }
-
-
-    @media screen and (max-width: 726px) {
+    @media screen and (max-width: 680px) {
       #fa-utensils {
-        margin-left: 27%;
+        margin-left: 30%;
         margin-top: -70px;
-        
       }
       #submit-new-grp {
-        width: 20%
+        width: 30%
       }
-
       .form-heading {
-        width: 70%
+        width: 60%
       }
-
-
-      @media screen and (max-width: 680px) {
+    
+      @media screen and (max-width: 575px) {
         #fa-utensils {
-          margin-left: 30%;
+          margin-left: 28%;
           margin-top: -70px;
         }
         #submit-new-grp {
           width: 30%
         }
-
         .form-heading {
-          width: 60%
+          width: 90%
         }
-
-      
-
-        @media screen and (max-width: 575px) {
+        @media screen and (max-width: 530px) {
           #fa-utensils {
-            margin-left: 28%;
+            margin-left: 20%;
             margin-top: -70px;
           }
           #submit-new-grp {
-            width: 30%
+            width: 50%
           }
           .form-heading {
-            width: 90%
+            width: 100%
           }
 
-
-          @media screen and (max-width: 530px) {
-            #fa-utensils {
-              margin-left: 20%;
-              margin-top: -70px;
-            }
-            #submit-new-grp {
-              width: 50%
-            }
-
-            .form-heading {
-              width: 100%
-            }
-
-
-  
-  @keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-15px);
-    }
-    60% {
-      transform: translateY(-9px);
-    }
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-9px);
+  }
+}
