@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Pot Luck</title>
+  <title>r. r o u l e t t e</title>
 
   <!-- Bootstrap CSS and JavaScript-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
@@ -29,6 +29,15 @@
   <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- LINK TO GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR|Questrial" rel="stylesheet">
+
+  <!-- LINK TO FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -37,49 +46,109 @@
 
     <!-- Intoduction -->
     <div class="introduction jumbotron" class="row">
-      <p id="intro">where do you want to go?</p>
-      <br>
-      <br> </h2>
-      <h3>We are here to help. PotLuck is the an application for finding and selecting restaurants when your group
-        just can't agree.
-        <br>
-        <br> Plan your next lunch outing by creating a group, entering your name, and suggesting whatever restaurant
-        tickles
-        your fancy. Click "Pick Restaurant" and let PotLuck do the rest! </h3>
-        
-      <button id="make-group-btn" type="button" class="btn btn-link">
-        <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
-        Create Group
-      </button>
-      <button id="existing-group-btn" type="button" class="btn btn-link">
-        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-        Find a Group
-      </button>
+      <center>
+
+        <div id="wrap">
+          <div id="logo">
+            <h1>r. r o u l e t t e</h1>
+            <br><div id="sub">where would you like to go?</div>
+          </div>
+          <div id="fa-utensils">
+            <i class="fas fa-utensils"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <button id="make-group-btn" type="button" class="btn btn-link">
+              <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+              Create Group
+            </button>
+          </div>
+
+          <div class="col-sm-6">
+            <button id="existing-group-btn" type="button" class="btn btn-link">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              Find a Group
+            </button>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-question-circle"></i><br><br>We're here to help! <br><br>
+                <div id="rroulette">r. r o u l e t t e</div> is an application for finding and selecting
+                restaurants when your group just can't agree.
+              </h5>
+
+            </div>
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-users"></i><br><br>Plan your next outing by:<br><br>
+                <ul>1. Creating a group</ul>
+                <ul>2. Entering your names</ul>
+                <ul>3. Suggesting whatever restaurant tickles your fancy.</ul>
+              </h5>
+
+            </div>
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-coffee"></i><br><br>Click <br>"Pick Restaurant."<br><br><br> Let <div id="rroulette">r. r o u l e t t e</div>do
+                the rest!
+              </h5>
+              </h5>
+            </div>
+          </div>
+
+          
+        <div class="row">
+            <div class="col-sm-6">
+              <h5 class="quotes"><br><br><br><br>A gambling<br> game. </h5>
+            </div>
+  
+            <div class="col-sm-6">
+              <h5 class="quotes"><br><br><br>Something
+                <br>involving a 
+                <br>high degree of
+                <br>chance.</h5>
+            </div>
+          </div>
+
+        </div>
+
+      </center>
+
 
     </div>
-
   </div>
   <!-- Form: Create new group -->
   <div class="container">
     <div id="new-group-form" class="jumbotron">
-      <div class=" text-center">
+      <div class="text-center">
 
         <!-- Group Name Input-->
-        <p class="form-heading">Group Name</p>
+<center>
+        <div class="row">
+            <div class="form-heading">  
+              <i class="fas fa-utensils"></i>
+              <br>Group Name
+          </div>
+        </div>
         <input class="form-control" id="new-group" placeholder="Enter Your Group Name">
 
         <!-- Submit new Group-->
         <button id="submit-new-grp" type="button" class="btn btn-link">
-          Create Group
+            <i class="fas fa-users"></i><br>Create <br> Group
         </button>
       </div>
     </div>
   </div>
+
   <!-- Form: Find group -->
   <div class="container">
     <div id="existing-group-form" class="jumbotron text-center">
       <!-- Group Name -->
-      <p class="form-heading">Group Name</p>
+      <div class="form-heading">Group Name</p>
       <input class="form-control" id="existing-group" placeholder="Find Your Group Name">
       <br>
       <br>
@@ -103,8 +172,8 @@
         </div>
 
         <div id="user-list">
+            <i class="fas fa-users"></i>
           <p id="members">Members:</p>
-          <br>
           <span id="userNames"></span>
         </div>
 
@@ -117,24 +186,27 @@
       <div id="pick-form">
         <div id="restaurantCard">
           <div id="pick-result"></div>
+          <div id="wrap">  <i class="fas fa-utensils"></i>
           <div id="nameDiv"></div>
           <div id="addrDiv"></div>
           <div id="phoneDiv"></div>
           <div id="ratingDiv"></div>
           <div id="photoDiv"></div>
           <div id="websiteDiv"></div>
+          </div>
         </div>
-
       </div>
     </div>
     <!-- Add Restaurant Form -->
+    
     <div class="col-xs-4 text-center">
-      <div id="new-restaurant">
         <p id="rest-form-heading">Enter your Choice</p>
         <!-- Username -->
         <!-- Future: Set a group leader w/ admin abilities -->
+        <div id="new-restaurant">
+          <center>
         <p class="rest-heading">User Name</p>
-        <input class="form-control one" id="username" placeholder="Enter Your Name">
+        <input class="form-control one" id="username" placeholder="Name">
         <br>
         <!-- Enter Location  -->
         <p class="rest-heading">Location</p>
@@ -143,16 +215,14 @@
         <!-- Add Restaurant field -->
         <div id="rest-list">
           <p id="rest-name" class="rest-heading">Restaurant Suggestion</p>
-          <input class="form-control one" id="restaurant-name" placeholder="Enter a Restaurant Suggestion">
-          <br>
+          <input class="form-control one" id="restaurant-name" placeholder="Enter Restaurant">
           <!-- Maybe add these to class later if we can get Loading CSS to work 'ld ld-over-full-inverse running' -->
-          <button id="submit-pick" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">Add</button>
-          <br>
         </div>
       </div>
+      <button id="submit-pick" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">Add</button>
     </div>
   </div>
-
+</center>
   <!-- All Groups Form -->
   <div id="all-groups" class="row">
     <div class="col-xs-4 col-sm-offset-4 text-center">
@@ -175,10 +245,9 @@
 
   <!-- Footer -->
   <div class="footer navbar-fixed-bottom">
-    <p id="foot-text"> CONTRIBUTORS: Gulden Rose, Ferew Tucho, Kaitlyn McLaughlin, Nebi</p>
-    <div class="copyright">
-      <p id="copywrite"> &copy; 2018 </p>
-    </div>
+    <p id="foot-text"> CONTRIBUTORS: Gulden Rose| Ferew Tucho | Kaitlyn McLaughlin | Nebi | &copy; 2018
+  </div>
+
   </div>
 
   </div>
