@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>r. r o u l e t t e</title>
+
+  <!-- Bootstrap CSS and JavaScript-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+
+  <!-- Google API -->
+  </script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4670cjLFnTOHnwtznTyGJj2ZcgHmfYc&libraries=places&language=en"></script>
+  <!-- jQueryUI -->
+  <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- LINK TO GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR|Questrial" rel="stylesheet">
+
+  <!-- LINK TO FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- User Content -->
+  <div class="container">
+
+    <!-- Intoduction -->
+    <div class="introduction jumbotron" class="row">
+      <center>
+
+        <div id="wrap">
+          <div id="logo">
+            <h1>r. r o u l e t t e</h1>
+            <br><div id="sub">where would you like to go?</div>
+          </div>
+          <div id="fa-utensils">
+            <i class="fas fa-utensils"></i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <button id="make-group-btn" type="button" class="btn btn-link">
+              <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+              Create Group
+            </button>
+          </div>
+
+          <div class="col-sm-6">
+            <button id="existing-group-btn" type="button" class="btn btn-link">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              Find a Group
+            </button>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-question-circle"></i><br><br>We're here to help! <br><br>
+                <div id="rroulette">r. r o u l e t t e</div> is an application for finding and selecting
+                restaurants when your group just can't agree.
+              </h5>
+
+            </div>
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-users"></i><br><br>Plan your next outing by:<br><br>
+                <ul>1. Creating a group</ul>
+                <ul>2. Entering your names</ul>
+                <ul>3. Suggesting whatever restaurant tickles your fancy.</ul>
+              </h5>
+
+            </div>
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-coffee"></i><br><br>Click <br>"Pick Restaurant."<br><br><br> Let <div id="rroulette">r. r o u l e t t e</div>do
+                the rest!
+              </h5>
+              </h5>
+            </div>
+          </div>
+
+          
+        <div class="row">
+            <div class="col-sm-6">
+              <h5 class="quotes"><br><br><br><br>A gambling<br> game. </h5>
+            </div>
+  
+            <div class="col-sm-6">
+              <h5 class="quotes"><br><br><br>Something
+                <br>involving a 
+                <br>high degree of
+                <br>chance.</h5>
+            </div>
+          </div>
+
+        </div>
+
+      </center>
+
+
+    </div>
+  </div>
+  <!-- Form: Create new group -->
+  <div class="container">
+    <div id="new-group-form" class="jumbotron">
+      <div class="text-center">
+
+        <!-- Group Name Input-->
+<center>
+        <div class="row">
+            <div class="form-heading">  
+              <i class="fas fa-utensils"></i>
+              <br>Group Name
+          </div>
+        </div>
+        <input class="form-control" id="new-group" placeholder="Enter Your Group Name">
+
+        <!-- Submit new Group-->
+        <button id="submit-new-grp" type="button" class="btn btn-link">
+            <i class="fas fa-users"></i><br>Create <br> Group
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form: Find group -->
+  <div class="container">
+    <div id="existing-group-form" class="jumbotron text-center">
+      <!-- Group Name -->
+      <div class="form-heading">Group Name</p>
+      <input class="form-control" id="existing-group" placeholder="Find Your Group Name">
+      <br>
+      <br>
+      <!-- Find Group -->
+      <button id="find-group" type="button" class="btn btn-link">
+        Find Group
+      </button>
+    </div>
+  </div>
+  </div>
+
+  <!-- Group form: View Group & Add Restaurants -->
+
+  <!-- Group Info Form -->
+  <div id="group-form" class="row">
+    <div class="col-xs-4 col-sm-offset-2 text-center">
+      <div id="display-group">
+        <!-- Display Group and its current restaurants -->
+        <div id="group-name">
+          <span id="groupName"></span>
+        </div>
+
+        <div id="user-list">
+            <i class="fas fa-users"></i>
+          <p id="members">Members:</p>
+          <span id="userNames"></span>
+        </div>
+
+      </div>
+      <br>
+      <!-- Restaurant card: Div to display yelp info of picked restaurant -->
+      <button id="pick-restaurant" type="button" class="btn btn-link">Pick Restaurant</button>
+      <br>
+      <br>
+      <div id="pick-form">
+        <div id="restaurantCard">
+          <div id="pick-result"></div>
+          <div id="wrap">  <i class="fas fa-utensils"></i>
+          <div id="nameDiv"></div>
+          <div id="addrDiv"></div>
+          <div id="phoneDiv"></div>
+          <div id="ratingDiv"></div>
+          <div id="photoDiv"></div>
+          <div id="websiteDiv"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Restaurant Form -->
+    
+    <div class="col-xs-4 text-center">
+        <p id="rest-form-heading">Enter your Choice</p>
+        <!-- Username -->
+        <!-- Future: Set a group leader w/ admin abilities -->
+        <div id="new-restaurant">
+          <center>
+        <p class="rest-heading">User Name</p>
+        <input class="form-control one" id="username" placeholder="Name">
+        <br>
+        <!-- Enter Location  -->
+        <p class="rest-heading">Location</p>
+        <input class="form-control one" id="location" placeholder="City and State">
+        <br>
+        <!-- Add Restaurant field -->
+        <div id="rest-list">
+          <p id="rest-name" class="rest-heading">Restaurant Suggestion</p>
+          <input class="form-control one" id="restaurant-name" placeholder="Enter Restaurant">
+          <!-- Maybe add these to class later if we can get Loading CSS to work 'ld ld-over-full-inverse running' -->
+        </div>
+      </div>
+      <button id="submit-pick" type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModal">Add</button>
+    </div>
+  </div>
+</center>
+  <!-- All Groups Form -->
+  <div id="all-groups" class="row">
+    <div class="col-xs-4 col-sm-offset-4 text-center">
+      <!-- col-sm-offset-4 -->
+      <div id="allGroups">
+        <div id="allGroupsHead">All Groups</div>
+        <div id="allGroupsList"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-7 center-align">
+      <div id="mapContainer" class="">
+        <div id="map"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer navbar-fixed-bottom">
+    <p id="foot-text"> CONTRIBUTORS: Gulden Rose| Ferew Tucho | Kaitlyn McLaughlin | Nebi | &copy; 2018
+  </div>
+
+  </div>
+
+  </div>
+  <!-- End Container -->
+
+  <!-- Linking all our JavaScript Files -->
+  <script type="text/javascript" src="/js/find-group.js"></script>
+  <script type="text/javascript" src="/js/create-group.js"></script>
+  <script type="text/javascript" src="/js/lunch.js"></script>
+  <script type="text/javascript" src="/js/map.js"></script>
+  <script type="text/javascript" src="/js/add-restaurant.js"></script>
+</body>
+
+</html>
