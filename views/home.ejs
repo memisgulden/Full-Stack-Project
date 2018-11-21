@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OAuth</title>
+</head>
+<body>
+    
+<nav>
+    <ul>
+        <% if (user) { %> 
+        <li><a href="/auth/logout">Log Out</a></li>
+        <% } else { %>
+        <li><a href="/auth/login">Login</a></li>
+        <% } %>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/profile">Profile</a></li>
+
+    </ul>
+</nav>
+
+<header>
+    <h1>Blah blah blah</h1>
+</header>
+
+
+</body>
+</html>
