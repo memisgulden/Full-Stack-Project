@@ -19,11 +19,10 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
-  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="../public/css/reset.css"> -->
 
   <!-- Google API -->
-  </script> -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4670cjLFnTOHnwtznTyGJj2ZcgHmfYc&libraries=places&language=en"></script>
   <!-- jQueryUI -->
   <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
@@ -42,16 +41,13 @@
 <body>
 
   <nav>
-    <ul>
-      <% if (user) { %>
-      <li><a href="/auth/logout">Log Out</a></li>
-      <% } else { %>
-      <li><a href="/auth/login">Login</a></li>
-      <% } %>
-      <li><a href="/">Homepage</a></li>
-      <li><a href="/profile">Profile</a></li>
-
-    </ul>
+    <% if (user) { %>
+    <a href="/auth/logout"><i class="fas fa-sign-out-alt"></i></a> |
+    <% } else { %>
+    <a href="/auth/login">Login</a> |
+    <% } %>
+    <a href="/"><i class="fas fa-home"></i></a> |
+    <a href="/profile"><i class="fas fa-user"></i></a>
   </nav>
 
 
@@ -65,94 +61,90 @@
     <!-- Intoduction -->
     <div class="introduction jumbotron" class="row">
       <center>
+        <!-- Display all users here -->
+        <div class="authWelcome">
+          <br><br>
+          <header>
+            Welcome,
+            <%= user.username %>!
+          </header><br>
+          <main>
+            <img src="<%= user.thumbnail %>" /><br><br>
+          </main>
+        </div>
+
+        <br>
+
 
         <div id="wrap">
           <div id="logo">
-            <h1>r. r o u l e t t e</h1>
+            <h1>r. r <img src="../css/images/bbfork.png"> u l e t t e</h1>
             <br>
             <div id="sub">where would you like to go?</div>
           </div>
-          <div id="fa-utensils">
-            <i class="fas fa-utensils"></i>
-          </div>
         </div>
 
-        <header>
-          <h1>Welcome to your profile,
-            <%= user.username %>
-          </h1>
-        </header>
 
-        <main>
-          <img src="<%= user.thumbnail %>" />
-          <p>This is your profile thumbnail</p>
 
-          <div>
-            <h1>All Users:</h1>
-            <!-- Display all users here -->
+
+        <div class="row">
+          <div class="col-sm-6">
+            <button id="make-group-btn" type="button" class="btn btn-link">
+              <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
+              Create Group
+            </button>
           </div>
 
+          <div class="col-sm-6">
+            <button id="existing-group-btn" type="button" class="btn btn-link">
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+              Find a Group
+            </button>
+          </div>
+        </div>
+        <br><br>
 
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-question-circle"></i><br><br>We're here to help! <br><br>
+                <div id="rroulette">r. r o u l e t t e</div> is an application for finding and selecting
+                restaurants when your group just can't agree.
+              </h5>
+
+            </div>
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-users"></i><br><br>Plan your next outing by:<br><br>
+                1. Creating a group<br>
+                2. Entering your names<br>
+                3. Suggesting whichever restaurant tickles your fancy.
+              </h5>
+
+            </div>
+            <div class="col-sm-4">
+              <h5 class="pg-title"><i class="fas fa-coffee"></i><br><br>Click <br>"Pick Restaurant."<br><br><br> Let
+                <div id="rroulette">r. r o u l e t t e</div>do
+                the rest!
+              </h5>
+              </h5>
+            </div>
+          </div>
 
 
           <div class="row">
             <div class="col-sm-6">
-              <button id="make-group-btn" type="button" class="btn btn-link">
-                <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
-                Create Group
-              </button>
+              <h5 class="quotes"><br><br><br><br>A gambling<br> game. </h5>
             </div>
 
             <div class="col-sm-6">
-              <button id="existing-group-btn" type="button" class="btn btn-link">
-                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                Find a Group
-              </button>
+              <h5 class="quotes"><br><br><br>Something
+                <br>involving a
+                <br>high degree of
+                <br>chance.</h5>
             </div>
           </div>
-          <br><br>
 
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
-                <h5 class="pg-title"><i class="fas fa-question-circle"></i><br><br>We're here to help! <br><br>
-                  <div id="rroulette">r. r o u l e t t e</div> is an application for finding and selecting
-                  restaurants when your group just can't agree.
-                </h5>
-
-              </div>
-              <div class="col-sm-4">
-                <h5 class="pg-title"><i class="fas fa-users"></i><br><br>Plan your next outing by:<br><br>
-                  <ul>1. Creating a group</ul>
-                  <ul>2. Entering your names</ul>
-                  <ul>3. Suggesting whatever restaurant tickles your fancy.</ul>
-                </h5>
-
-              </div>
-              <div class="col-sm-4">
-                <h5 class="pg-title"><i class="fas fa-coffee"></i><br><br>Click <br>"Pick Restaurant."<br><br><br> Let
-                  <div id="rroulette">r. r o u l e t t e</div>do
-                  the rest!
-                </h5>
-                </h5>
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-sm-6">
-                <h5 class="quotes"><br><br><br><br>A gambling<br> game. </h5>
-              </div>
-
-              <div class="col-sm-6">
-                <h5 class="quotes"><br><br><br>Something
-                  <br>involving a
-                  <br>high degree of
-                  <br>chance.</h5>
-              </div>
-            </div>
-
-          </div>
+        </div>
 
       </center>
 
@@ -160,6 +152,7 @@
     </div>
   </div>
   <!-- Form: Create new group -->
+
   <div class="container">
     <div id="new-group-form" class="jumbotron">
       <div class="text-center">
@@ -181,22 +174,29 @@
       </div>
     </div>
   </div>
-
+  </center>
   <!-- Form: Find group -->
-  <div class="container">
-    <div id="existing-group-form" class="jumbotron text-center">
-      <!-- Group Name -->
-      <div class="form-heading">Group Name</p>
-        <input class="form-control" id="existing-group" placeholder="Find Your Group Name">
-        <br>
-        <br>
-        <!-- Find Group -->
-        <button id="find-group" type="button" class="btn btn-link">
-          Find Group
-        </button>
+  <div id="groupNames">
+    <div class="container">
+      <div id="existing-group-form" class="jumbotron text-center">
+        <!-- Group Name -->
+        <center>
+          <div class="form-heading">
+            <i class="fas fa-utensils"></i>
+            <br>Group Name</p>
+          </div>
+          <input class="form-control" id="existing-group" placeholder="Find Your Group Name">
+          <br>
+          <br>
+          <!-- Find Group -->
+          <button id="find-group" type="button" class="btn btn-link">
+            <i class="fas fa-users"></i><br>Find <br>Group
+          </button>
       </div>
     </div>
   </div>
+  </div>
+  </center>
 
   <!-- Group form: View Group & Add Restaurants -->
 
@@ -262,15 +262,17 @@
   </div>
   </center>
   <!-- All Groups Form -->
-  <div id="all-groups" class="row">
-    <div class="col-xs-4 col-sm-offset-4 text-center">
-      <!-- col-sm-offset-4 -->
-      <div id="allGroups">
-        <div id="allGroupsHead">All Groups</div>
-        <div id="allGroupsList"></div>
+  <center>
+    <div id="all-groups" class="row">
+      <div class="col-xs-4 col-sm-offset-4 text-center">
+        <!-- col-sm-offset-4 -->
+        <div id="allGroups">
+          <div id="allGroupsHead">All Groups</div>
+          <div id="allGroupsList"></div>
+        </div>
       </div>
     </div>
-  </div>
+  </center>
 
   <!-- Map -->
   <div class="row">
@@ -283,7 +285,7 @@
 
   <!-- Footer -->
   <div class="footer navbar-fixed-bottom">
-    <p id="foot-text"> CONTRIBUTORS: Gulden Rose| Ferew Tucho | Kaitlyn McLaughlin | Nebi | &copy; 2018
+    <p id="foot-text"> CONTRIBUTORS: <a href="https://www.linkedin.com/in/guldenmemis/">Gulden Rose</a>| <a href="https://www.linkedin.com/in/ferew-tucho-627880167/">Ferew Tucho</a> | <a href="https://www.linkedin.com/in/kaitlyn-mclaughlin/">Kaitlyn McLaughlin</a> | <a href="https://www.linkedin.com/in/nebiyou-kebede-78a9b4168/">Nebi</a> | &copy; 2018
   </div>
 
   </div>
