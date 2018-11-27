@@ -9,8 +9,46 @@ body {
     font-family: 'Montserrat', sans-serif;
   }  
 
+nav {
+  text-align: right; 
+  padding-right: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+  background-color: #e6d5d5;
+  color: #5967b4;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 14px;
+}
+
+.google-btn {
+  color:  #a5a9d9;
+  font-size: 20px;
+  font-family: 'Montserrat-bold', sans-serif;
+
+}
+
+a:link {
+  color: #5967b4;
+}
+
+/* visited link */
+a:visited {
+  color: #8e97cc;
+}
+
+/* mouse over link */
+a:hover {
+  color:  #5967b4;
+}
+
+/* selected link */
+a:active {
+  color: #5967b4;
+}
+
   .pg-title {
     background-color: #e6d5d5;
+    text-align: center;
     color: #5967b4;
     font-family: 'Montserrat-bold', sans-serif;
     font-size: 14px;
@@ -20,6 +58,7 @@ body {
     width: 220px;
     height: 200px; 
     margin-bottom: 5%;
+    padding: 5%;
 
   }
 
@@ -79,14 +118,12 @@ body {
   #existing-group-form,
   #all-groups{
     display: none;
-    background-color: white;
     margin-top: 10rem;
     padding: 5rem;
     line-height: 1;
   }
   
   .introduction {
-    /* background-color: rgba(19, 18, 18, 0.537); */
     color: #e0d8cb;
     padding: 5rem;  
   }
@@ -116,12 +153,13 @@ body {
     color: #5967b4; 
     font-family: 'Montserrat-bold', sans-serif;
     border-radius: 60px;
-    width: 30%;
+    width: 20%;
     border: 0px solid;
     padding: 24px; 
     text-align: center;
     margin-bottom: 5%;
     font-size: 2rem;
+    
   }   
   
   .rest-heading {
@@ -154,7 +192,10 @@ body {
     font-size: 16px; 
     }
   
-
+  .opacity {
+    opacity: 10%;
+  }
+  
   #wrap {
     background-color: #5967b4; 
     color:#e6d5d5; 
@@ -163,7 +204,8 @@ body {
     padding: 20px;
     text-align: center;
     margin-bottom: 5%;
-    font-size: 16px; 
+    font-size: 16px;
+    opacity: 10%; 
     }
   
      */
@@ -185,21 +227,17 @@ body {
     line-height: 2rem;
     font-variant: small-caps;
   }
-  
-  #submit-new-grp,
-  /* #find-group,
 
-  #allGroupsItemBtn { */
-    #submit-new-grp
+    #submit-new-grp, #find-group
     {
     text-decoration: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color:#5967b4; 
     color: #e6d5d5;
     font-family: 'Montserrat-bold', sans-serif;
     width: 15%;
-    height: 30%;
+    height: 20%;
     border-radius: 60%;
     border: 0px solid;
     padding: 20px; 
@@ -208,7 +246,6 @@ body {
   }
   #submit-pick {
     position: relative;
-    /* margin-right: 50%; */
     background-color: #5967b4; 
     color:#e6d5d5; 
     font-family: 'Montserrat-bold', sans-serif;
@@ -233,41 +270,52 @@ body {
   }
   
   #make-group-btn {
-    margin-top: 2rem;
+    margin: -5%;
     background-color: #e6d5d5;
     color: #8e97cc;
     text-decoration: none;
     outline: none;
-    font-size: 2rem;
-    font-variant: small-caps;
-    border-radius: 25px;
+    font-size: 3rem;
+    border-radius: 30px;
+    padding: 5%;
   }
   
   #existing-group-btn {
-    margin-top: 2rem;
+    margin: -5%;
     background-color: #e6d5d5;
     color: #8e97cc;
     text-decoration: none;
     outline: none;
-    font-size: 2rem;
-    font-variant: small-caps;
-    border-radius: 25px;
+    font-size: 3rem;
+    border-radius: 30px;
+    padding: 5%;
   }
   
-  #all-groups {
-      color: white;
-    }
-    
     #allGroupsHead {
       font-size: 20px;
+      color:  #8e97cc;
+    }
+
+    #allGroups {
+      background-color: #e6d5d5;
+      color: #5967b4; 
+      font-family: 'Montserrat-bold', sans-serif;
+      border-radius: 25px;
+      border: 0px solid;
+      padding: 24px; 
+      text-align: center;
+      margin-bottom: 5%;
+      font-size: 2.5rem;
     }
     
     .allGroupsItemBtn {
-      color: #bb7b43;
+      background-color:  #5967b4; 
+      color: #e6d5d5; 
       text-decoration: none;
       outline: none;
       font-size: 2.1rem;
       font-variant: small-caps;
+      border-radius: 25px;
       margin: 10px;
       height: 40px;
       display: inline-block;
@@ -333,6 +381,17 @@ body {
     min-width: 100px;
     max-width: 600px;
   }
+
+.authWelcome{
+  color: #e6d5d5;
+  background-color:#5967b4;
+  text-align: center;
+  font-family: 'Montserrat-bold', sans-serif;
+  font-size: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 60%;
+}
   
   button {
     font-family: 'Montserrat-bold', sans-serif;   
@@ -415,6 +474,12 @@ body {
             .form-heading {
               width: 100%
             }
+          }
+        }
+      }
+    }
+  }
+}
 
 
   
