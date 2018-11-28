@@ -31,7 +31,7 @@ passport.deserializeUser((id, done) => {
 passport.use(
     new GoogleStrategy({
         //options for the google strategy
-        callbackURL: "http://localhost:3000/auth/google/redirect",
+        callbackURL: "https://arcane-citadel-23385.herokuapp.com/auth/google/redirect",
         clientID: "861916271026-kbin80qeojrcjooimk9u7frr5kr6e4u0.apps.googleusercontent.com",
         clientSecret: "f43kH6X2CjhicgYKzb1ETlZf"
 

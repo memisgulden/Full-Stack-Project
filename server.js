@@ -9,11 +9,9 @@ const passport = require("passport");
 const cookieSession = require("cookie-session");
 
 var bodyParser = require("body-parser");
-var port = process.env.PORT || 3000;
-
 // Sets up the Express App
 const app = express();
-
+var PORT = process.env.PORT || 3000;
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
@@ -57,6 +55,7 @@ app.get("/", (req,res) => {
     res.render('home', {user: req.user});
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log("test app now listening for requests on port 3000");
 });
+
