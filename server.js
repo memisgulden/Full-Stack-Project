@@ -9,6 +9,7 @@ const passport = require("passport");
 const cookieSession = require("cookie-session");
 
 var bodyParser = require("body-parser");
+var port = process.env.PORT || 3000;
 
 // Sets up the Express App
 const app = express();
