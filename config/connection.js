@@ -1,12 +1,12 @@
 // Dependencies
 var mysql = require("mysql");
 var Sequelize = require("sequelize");
-var connection;
+var sequelize;
 
 if (process.env.JAWSDB_URL) {
-  connection = mysql.createConnection(process.env.JAWSDB_URL);
+  sequelize = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-  connection = mysql.createConnection({
+  sequelize = mysql.createConnection({
     host: "localhost",
     port: 3306, 
     user: "root",
@@ -15,7 +15,7 @@ if (process.env.JAWSDB_URL) {
   })
 }
 
-// // Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
+// Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
 // var sequelize = new Sequelize("lunch_db", "root", "password", {
 //   host: "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
 //   user: "",
@@ -31,4 +31,4 @@ if (process.env.JAWSDB_URL) {
 module.exports = sequelize;
 
 connection.connect();
-module.exports = connection;
+// module.exports = connection;
