@@ -4,15 +4,9 @@ var mysql = require("mysql");
 // var connection;
 
 if (process.env.JAWSDB_URL) {
-  var sequelize = new Sequelize("lunch_db", "root", "password", {
-   dialect: "mysql",
-   protocol: "mysql",
-   port: 3306,
-   host: "rroulette",
-   logging: true
-    
-  });
-  } else {
+  var sequelize = new Sequelize( 
+    process.env.JAWSDB_URL
+   )} else {
   sequelize = new Sequelize("lunch_db", "root", "password", {
     host: "localhost",
     port: 3306,
