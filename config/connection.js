@@ -20,8 +20,5 @@ if (process.env.JAWSDB_URL) {
 
 
 }
-
-// Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
-
 // Exports the connection for other files to use
 module.exports = sequelize;

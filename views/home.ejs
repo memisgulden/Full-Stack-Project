@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    
-      <!-- jQuery -->
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    
-      <!-- CSS -->
-      <link rel="stylesheet" type="text/css" href="/css/style.css">
-      <!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> -->
-    
-      <!-- Google API -->
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4670cjLFnTOHnwtznTyGJj2ZcgHmfYc&libraries=places&language=en"></script>
-      <!-- jQueryUI -->
-      <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    
-      <!-- LINK TO GOOGLE FONT -->
-      <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR|Questrial" rel="stylesheet">
-    
-      <!-- LINK TO FONT AWESOME -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> -->
+
+  <!-- aos -->
+  <link rel="stylesheet" type="text/css" href="/css/aos.css">
+
+  <!-- Google API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4670cjLFnTOHnwtznTyGJj2ZcgHmfYc&libraries=places&language=en"></script>
+  <!-- jQueryUI -->
+  <link rel="stylesheet" type="text/css" media="all" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  <!-- LINK TO GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR|Questrial" rel="stylesheet">
+
+  <!-- LINK TO FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
 </head>
 
 
 <body>
-    
-    <nav>
-        <% if (user) { %>
-        <a href="/auth/logout"><i class="fas fa-sign-out-alt"></i></a> |
-        <% } else { %>
-        <a href="/auth/login"><i class="fas fa-sign-in-alt"></i></a> |
-        <% } %>
-        <a href="/"><i class="fas fa-home"></i></a> |
-        <a href="/profile"><i class="fas fa-user"></i></a> 
-  
-     
-    </nav>
+
+  <nav>
+    <% if (user) { %>
+    <a href="/auth/logout"><i class="fas fa-sign-out-alt"></i></a> |
+    <% } else { %>
+    <a href="/auth/login"><i class="fas fa-sign-in-alt"></i></a> |
+    <% } %>
+    <a href="/"><i class="fas fa-home"></i></a> |
+    <a href="/profile"><i class="fas fa-user"></i></a>
+
+
+  </nav>
 
   <!-- User Content -->
   <div class="container">
 
-        <!-- Intoduction -->
-        <div class="introduction jumbotron" class="row">
-          <center>
-    
-            <div id="wrap">
-              <div id="logo">
-                <h1>r. r <img src="../css/images/bbfork.png"> u l e t t e</h1>
-                <br><div id="sub">where would you like to go?</div>
-              </div>
-            </div>
-    
-         
-    
-            
-    
-    
-      <!-- Footer -->
-      <div class="footer navbar-fixed-bottom">
-        <p id="foot-text"> CONTRIBUTORS: <a href="https://www.linkedin.com/in/guldenmemis/">Gulden Rose</a>| <a href="https://www.linkedin.com/in/ferew-tucho-627880167/">Ferew Tucho</a> | <a href="https://www.linkedin.com/in/kaitlyn-mclaughlin/">Kaitlyn McLaughlin</a> | <a href="https://www.linkedin.com/in/nebiyou-kebede-78a9b4168/">Nebi</a> | &copy; 2018
-      </div>
-    
-      </div>
-    
-      </div>
-      <!-- End Container -->
-    
-      <!-- Linking all our JavaScript Files -->
-      <script type="text/javascript" src="/js/find-group.js"></script>
-      <script type="text/javascript" src="/js/create-group.js"></script>
-      <script type="text/javascript" src="/js/lunch.js"></script>
-      <script type="text/javascript" src="/js/map.js"></script>
-      <script type="text/javascript" src="/js/add-restaurant.js"></script>
-    </body>
-    
-    </html>
+    <!-- Intoduction -->
+    <div class="introduction jumbotron" class="row">
+      <center>
+
+        <div id="wrap" data-aos = "zoom-in">
+          <div id="logo">
+            <h1>r. r <img src="../css/images/bbfork.png"> u l e t t e</h1>
+            <br>
+            <div id="sub">where would you like to go?</div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <!-- Footer -->
+        <div class="footer navbar-fixed-bottom">
+          <p id="foot-text"> CONTRIBUTORS: <a href="https://www.linkedin.com/in/guldenmemis/">Gulden Rose</a>| <a href="https://www.linkedin.com/in/ferew-tucho-627880167/">Ferew
+              Tucho</a> | <a href="https://www.linkedin.com/in/kaitlyn-mclaughlin/">Kaitlyn McLaughlin</a> | <a href="https://www.linkedin.com/in/nebiyou-kebede-78a9b4168/">Nebi</a>
+            | &copy; 2018
+        </div>
+
+    </div>
+
+  </div>
+  <!-- End Container -->
+
+  <script type="text/javascript" src="/js/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1600
+    })
+  </script>
+
+  <!-- Linking all our JavaScript Files -->
+  <script type="text/javascript" src="/js/find-group.js"></script>
+  <script type="text/javascript" src="/js/create-group.js"></script>
+  <script type="text/javascript" src="/js/lunch.js"></script>
+  <script type="text/javascript" src="/js/map.js"></script>
+  <script type="text/javascript" src="/js/add-restaurant.js"></script>
+</body>
+
+</html>
 
 
 
@@ -93,4 +107,5 @@
 
 
 </body>
+
 </html>
