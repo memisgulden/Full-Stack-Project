@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "async": "^2.6.1",
+    "body-parser": "^1.18.3",
     "cookie-session": "^2.0.0-beta.3",
     "dotenv": "^6.1.0",
     "ejs": "^2.6.1",
@@ -20,6 +20,7 @@
     "fs": "0.0.1-security",
     "mongodb": "^3.1.9",
     "mongoose": "^5.3.12",
+    "mysql": "^2.16.0",
     "mysql2": "^1.6.4",
     "nodemon": "^1.18.6",
     "passport": "^0.4.0",
