@@ -21,6 +21,9 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> -->
+  
+  <!-- aos -->
+  <link rel="stylesheet" type="text/css" href="/css/aos.css">
 
   <!-- Google API -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4670cjLFnTOHnwtznTyGJj2ZcgHmfYc&libraries=places&language=en"></script>
@@ -41,17 +44,17 @@
 
 <body>
 
-    <nav>
-        <% if (user) { %>
-        <a href="/auth/logout"><i class="fas fa-sign-out-alt"></i></a> |
-        <% } else { %>
-        <a href="/auth/login"><i class="fas fa-sign-in-alt"></i></a> |
-        <% } %>
-        <a href="/"><i class="fas fa-home"></i></a>|
-        <a href="/profile"><i class="fas fa-user"></i></a> 
-  
-     
-    </nav>
+  <nav>
+    <% if (user) { %>
+    <a href="/auth/logout"><i class="fas fa-sign-out-alt"></i></a> |
+    <% } else { %>
+    <a href="/auth/login"><i class="fas fa-sign-in-alt"></i></a> |
+    <% } %>
+    <a href="/"><i class="fas fa-home"></i></a>|
+    <a href="/profile"><i class="fas fa-user"></i></a>
+
+
+  </nav>
 
   <div class="container">
 
@@ -59,7 +62,7 @@
     <div class="introduction jumbotron" class="row">
       <center>
 
-        <div id="wrap">
+        <div id="wrap"  data-aos = "zoom-in">
           <div id="logo">
             <h1>r. r <img src="../css/images/bbfork.png"> u l e t t e</h1>
             <br>
@@ -67,10 +70,10 @@
           </div>
         </div>
 
-        <button>
-            <a class="google-btn" href="/auth/google">Google+</a>
+        <button data-aos = "zoom-in-right">
+          <a class="google-btn" href="/auth/google">Google+</a>
         </button>
-        
+
 
 
 
@@ -78,13 +81,22 @@
 
         <!-- Footer -->
         <div class="footer navbar-fixed-bottom">
-          <p id="foot-text"> CONTRIBUTORS: <a href="https://www.linkedin.com/in/guldenmemis/">Gulden Rose</a>| <a href="https://www.linkedin.com/in/ferew-tucho-627880167/">Ferew Tucho</a> | <a href="https://www.linkedin.com/in/kaitlyn-mclaughlin/">Kaitlyn McLaughlin</a> | <a href="https://www.linkedin.com/in/nebiyou-kebede-78a9b4168/">Nebi</a> | &copy; 2018
+          <p id="foot-text"> CONTRIBUTORS: <a href="https://www.linkedin.com/in/guldenmemis/">Gulden Rose</a>| <a href="https://www.linkedin.com/in/ferew-tucho-627880167/">Ferew
+              Tucho</a> | <a href="https://www.linkedin.com/in/kaitlyn-mclaughlin/">Kaitlyn McLaughlin</a> | <a href="https://www.linkedin.com/in/nebiyou-kebede-78a9b4168/">Nebi</a>
+            | &copy; 2018
         </div>
 
     </div>
 
   </div>
   <!-- End Container -->
+
+  <script type="text/javascript" src="/js/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1600
+    })
+  </script>
 
   <!-- Linking all our JavaScript Files -->
   <script type="text/javascript" src="/js/find-group.js"></script>

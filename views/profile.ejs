@@ -22,6 +22,9 @@
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <!-- <link rel="stylesheet" type="text/css" href="../public/css/reset.css"> -->
 
+  <!-- aos -->
+  <link rel="stylesheet" type="text/css" href="/css/aos.css">
+
   <!-- Google API -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCE4670cjLFnTOHnwtznTyGJj2ZcgHmfYc&libraries=places&language=en"></script>
   <!-- jQueryUI -->
@@ -62,7 +65,7 @@
     <div class="introduction jumbotron" class="row">
       <center>
         <!-- Display all users here -->
-        <div class="authWelcome">
+        <div class="authWelcome" data-aos="zoom-in-right">
           <br><br>
           <header>
             Welcome,
@@ -88,14 +91,14 @@
 
 
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6" data-aos="zoom-in-right">
             <button id="make-group-btn" type="button" class="btn btn-link">
               <span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span>
               Create Group
             </button>
           </div>
 
-          <div class="col-sm-6">
+          <div class="col-sm-6" data-aos="zoom-in-left">
             <button id="existing-group-btn" type="button" class="btn btn-link">
               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
               Find a Group
@@ -105,15 +108,15 @@
         <br><br>
 
         <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
+          <div class="row" >
+            <div class="col-sm-4" data-aos="zoom-in-right">
               <h5 class="pg-title"><i class="fas fa-question-circle"></i><br><br>We're here to help! <br><br>
                 <div id="rroulette">r. r o u l e t t e</div> is an application for finding and selecting
                 restaurants when your group just can't agree.
               </h5>
 
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" data-aos="zoom-in">
               <h5 class="pg-title"><i class="fas fa-users"></i><br><br>Plan your next outing by:<br><br>
                 1. Creating a group<br>
                 2. Entering your names<br>
@@ -121,7 +124,7 @@
               </h5>
 
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4" data-aos="zoom-in-left">
               <h5 class="pg-title"><i class="fas fa-coffee"></i><br><br>Click <br>"Pick Restaurant."<br><br><br> Let
                 <div id="rroulette">r. r o u l e t t e</div>do
                 the rest!
@@ -132,11 +135,11 @@
 
 
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="zoom-in-left">
               <h5 class="quotes"><br><br><br><br>A gambling<br> game. </h5>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6" data-aos="zoom-in-right">
               <h5 class="quotes"><br><br><br>Something
                 <br>involving a
                 <br>high degree of
@@ -285,13 +288,22 @@
 
   <!-- Footer -->
   <div class="footer navbar-fixed-bottom">
-    <p id="foot-text"> CONTRIBUTORS: <a href="https://www.linkedin.com/in/guldenmemis/">Gulden Rose</a>| <a href="https://www.linkedin.com/in/ferew-tucho-627880167/">Ferew Tucho</a> | <a href="https://www.linkedin.com/in/kaitlyn-mclaughlin/">Kaitlyn McLaughlin</a> | <a href="https://www.linkedin.com/in/nebiyou-kebede-78a9b4168/">Nebi</a> | &copy; 2018
+    <p id="foot-text"> CONTRIBUTORS: <a href="https://www.linkedin.com/in/guldenmemis/">Gulden Rose</a>| <a href="https://www.linkedin.com/in/ferew-tucho-627880167/">Ferew
+        Tucho</a> | <a href="https://www.linkedin.com/in/kaitlyn-mclaughlin/">Kaitlyn McLaughlin</a> | <a href="https://www.linkedin.com/in/nebiyou-kebede-78a9b4168/">Nebi</a>
+      | &copy; 2018
   </div>
 
   </div>
 
   </div>
   <!-- End Container -->
+
+  <script type="text/javascript" src="/js/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init({
+      duration: 1600
+    })
+  </script>
 
   <!-- Linking all our JavaScript Files -->
   <script type="text/javascript" src="/js/find-group.js"></script>
