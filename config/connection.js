@@ -1,12 +1,12 @@
 // Dependencies
 var mysql = require("mysql");
 var Sequelize = require("sequelize");
-var sequelize;
+
 
 if (process.env.JAWSDB_URL) {
-  sequelize = mysql.createConnection(process.env.JAWSDB_URL);
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
-  sequelize = mysql.createConnection({
+  connection = mysql.createConnection({
     host: "localhost",
     port: 3306, 
     user: "root",
@@ -28,7 +28,6 @@ if (process.env.JAWSDB_URL) {
 // });
 
 // Exports the connection for other files to use
-module.exports = sequelize;
+connection.connect();
+module.exports = connection;
 
-// connection.connect();
-// module.exports = connection;
