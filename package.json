@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "cookie-session": "^2.0.0-beta.3",
     "dotenv": "^6.1.0",
     "ejs": "^2.6.1",
@@ -23,12 +24,8 @@
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "path": "^0.12.7",
-    "travis": "^0.1.1",
-    "express": "^4.16.4",
-    "mysql": "^2.16.0",
-    "mysql2": "^1.6.4",
-    "body-parser": "^1.18.3",
-    "sequelize": "^4.41.2"
+    "sequelize": "^4.41.2",
+    "travis": "^0.1.1"
   },
   "devDependencies": {
     "eslint": "^5.9.0",
