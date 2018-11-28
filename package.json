@@ -23,19 +23,19 @@
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "path": "^0.12.7",
-    "travis": "^0.1.1"
+    "travis": "^0.1.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.4",
+    "body-parser": "^1.18.3",
+    "sequelize": "^4.41.2"
   },
   "devDependencies": {
-    "body-parser": "^1.18.3",
     "eslint": "^5.9.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
-    "express": "^4.16.4",
-    "mysql": "^2.16.0",
-    "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
   }
 }
