@@ -10,11 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "body-parser": "^1.18.3",
-=======
     "async": "^2.6.1",
->>>>>>> 4e33957781bf2cabe793056abd23d6961d145ad8
     "cookie-session": "^2.0.0-beta.3",
     "dotenv": "^6.1.0",
     "ejs": "^2.6.1",
