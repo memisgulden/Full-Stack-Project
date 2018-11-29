@@ -2,7 +2,7 @@
 
 <h1>r. r o u l e t t e</h1>
 
-<p>An app created to help alleviate the need for debate and indecision about
+<p>An app created to help alleviate debate and indecision about
 where a group of friends or coworkers should have food or drinks, etc.</p>
 <br>
 <p>The app will takes input from all members of group to randomly decide where the group should eat or drink.</p>
@@ -29,3 +29,5 @@ where a group of friends or coworkers should have food or drinks, etc.</p>
 <li>Kaitlyn McLaughlin</li>
 <li>Nebiyou Assefa</li>
 </ul>
+
+<h1>View the deployed Application [here](https://arcane-citadel-23385.herokuapp.com/)</h1>
