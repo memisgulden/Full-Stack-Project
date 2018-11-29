@@ -1,6 +1,6 @@
 # Full-Stack-Project
 
-<h1>r. r o u l e t t e<h1>
+<h1>r. r o u l e t t e</h1>
 
 <p>An app created to help alleviate the need for debate and indecision about
 where a group of friends or coworkers should have food or drinks, etc.</p>
