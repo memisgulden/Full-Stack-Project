@@ -30,4 +30,4 @@ where a group of friends or coworkers should have food or drinks, etc.</p>
 <li>Nebiyou Assefa</li>
 </ul>
 
-# View the deployed Application [here](https://arcane-citadel-23385.herokuapp.com/)
+# View the deployed application [here](https://arcane-citadel-23385.herokuapp.com/)
