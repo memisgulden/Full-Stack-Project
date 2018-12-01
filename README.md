@@ -14,6 +14,7 @@ where a group of friends or coworkers should have food or drinks, etc.</p>
 <li>Express</li>
 <li>Sequelize</li>
 <li>Bootstrap</li>
+<li>AOS.css</li>
 <li>MySQL</li>
 <li>Cookie-Session</li>
 <li>Passport-Google-OAUTH20</li>
